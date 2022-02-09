@@ -26,6 +26,7 @@ body {
     text-align: center;
     margin-top: 0;
     margin-bottom: 45px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -63,9 +64,12 @@ body {
 .review {
     background-color: hsl(300, 43%, 22%);
     color: hsl(0, 0%, 100%);
-    padding: 38px 32px;
     margin-bottom: 16px;
     border-radius: 8px;
+}
+
+.review-inner {
+    padding: 38px 32px;
 }
 
 .review-heading {
@@ -100,4 +104,98 @@ body {
 .review .review-content {
     margin: 0;
     font-weight: 500;
+}
+
+@media screen and (min-width: 1113px) {
+    body {
+        background-image: url("../images/bg-pattern-top-desktop.svg"),
+            url("../images/bg-pattern-bottom-desktop.svg");
+        background-position: top left, bottom right;
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    main {
+        max-width: 1112px;
+        margin: 125px auto 98px;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .heading-text {
+        max-width: 428px;
+        text-align: left;
+        margin-bottom: 75px;
+    }
+
+    .heading-text h1 {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+        font-size: 50px;
+        max-width: 100%;
+    }
+
+    .heading-text p {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .heading-stars {
+        width: 448px;
+    }
+
+    .stars-wrapper {
+        display: flex;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        position: relative;
+        margin-bottom: 16px;
+    }
+
+    .stars-wrapper:nth-child(1) {
+        left: -92px;
+    }
+
+    .stars-wrapper:nth-child(2) {
+        left: -46px;
+    }
+
+    .stars-wrapper .stars {
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 0;
+    }
+
+    .stars-wrapper .stars-text {
+        font-size: 13px;
+        margin-top: 3px;
+    }
+
+    .stars-wrapper .stars img {
+        margin-left: 4px;
+    }
+
+    .reviews {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .review {
+        max-width: 350px;
+        position: relative;
+    }
+
+    .review:nth-child(2) {
+        top: 16px;
+    }
+
+    .review:nth-child(3) {
+        top: 32px;
+    }
 }
